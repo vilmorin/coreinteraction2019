@@ -1,0 +1,29 @@
+body{
+	background-color:rgb(230, 247, 255);
+	font-family:"futura";
+	width: 100%;
+	color:black;
+	text-align:right;
+
+}
+
+#image{
+	width:4200px;
+	z-index:-1;
+}
+
+#container{
+	width:100%;
+	display: inline-block;
+  	color: gray;
+  	padding: 14px;
+  	text-decoration: none;
+}
+
+#biker{
+	    width: 80px;
+    position: fixed;
+    /* bottom: 162px; */
+    right: 1200px;
+    top: 435px;
+}

@@ -1,0 +1,60 @@
+
+body{
+	background-color:rgb(230, 247, 255);
+	font-family:"futura";
+	color:black;
+
+}
+
+
+#container{
+	width: 100%;
+	display:grid;
+	grid-template-columns:10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+	grid-template-rows:10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+
+#image{
+	 width: 400px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    position: absolute;
+    left: 500px;
+	
+}
+
+
+
+
+p{
+    font-size: 30pt;
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+#button{
+   width: 50px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    /* grid-column-start: 3; */
+    /* grid-row-start: 7; */
+    /* grid-row-end: 6; */
+    top: 420px;
+    left: 684px;
+    opacity: 0;
+}	
+
+.wrapper{
+	display: block;
+	margin:auto;
+	width:70%;
+}
+
+
+
+

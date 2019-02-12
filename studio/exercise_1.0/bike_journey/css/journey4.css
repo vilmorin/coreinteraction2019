@@ -1,0 +1,59 @@
+
+body{
+	background-color:rgb(230, 247, 255);
+	font-family:"futura";
+	width:auto 1000px auto;
+	color:black;
+	text-align:center;
+
+}
+
+
+#container{
+	width: auto 1000px auto;
+	display:grid;
+	background-color:;
+	grid-template-columns:10% 10% 10% 10% 10% 10% 10% 10% 10% 10% auto;
+	grid-template-rows:100px 100px 100px 100px 100px 100px auto;
+}
+
+
+#image{
+	width: 600px;
+    /*grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;*/
+    position: absolute;
+    left: 500px;
+}
+
+
+p{
+	font-size: 27pt;
+    width: 300px;
+    position: absolute;
+    background-color: white;
+    left: 100px;
+    top: 80px;
+    /*grid-row-start: 3;
+    grid-column-start: 6;
+    grid-column-end: ;*/
+}
+
+
+#button2{
+	width: 40px;
+    height: 150px;
+    position: relative;
+    /* grid-column-start: 3; */
+    /* grid-row-start: 7; */
+    /* grid-row-end: 6; */
+    top: 150px;
+    left: 558px;
+    background-color:rgb(230, 247, 255);
+	opacity:0;
+    
+}
+
+
+
