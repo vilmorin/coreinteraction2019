@@ -17,9 +17,17 @@
                 color:black;
             }
 
+            body {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+
+
             *{
                 box-sizing:border-box;
             }
+
 
             header{
                 background-color:lightblue;
@@ -32,13 +40,19 @@
                 width:80%;
                 height:70%;
                 text-align:center;
+
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
             }
 
             aside{
                 background-color:green;
                 width:20%;
                 height:70%;
-                float:right;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
             }
 
             footer{
@@ -53,16 +67,34 @@
                 border-style:solid;
                 width:50%;
                 height:50%;
-                float:right;
+
             }
 
             aside section{
-                border-width: 5px 0 5px 0;
                 border-color:black;
                 border-style:solid;
-                height:25%;
-                width:100%;
+                height:50%;
             }
+
+            @media (max-width:800px) {
+                main{
+                    width: 100%;
+                }
+            }
+
+            @media (max-width:800px) {
+                aside{
+                    width: 100%;
+                }
+            }
+
+            @media (max-width:800px) {
+                aside section{
+                    width: 100%;
+                }
+            }
+
+
 
         </style>
     </head>

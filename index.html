@@ -21,7 +21,12 @@
                 text-align:center;
                 font-family:futura;
                 color:black;
-            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
 
 		body{
 			background-color:black;
@@ -30,20 +35,39 @@
 
 		#container1{
             width:20%;
-            height:20%;
-			background-color:white;
-            left:20%;
+            height:30%;
+            left:15%;
+            top:15%;
             position:fixed;
+            color:white;
+            z-index:10;
+            padding-top:7%;
             }
 
         #container2{
             width:20%;
-            height:20%;
-            background-color:white;
-            left:60%;
+            height:30%;
+            right:15%;
+            top:15%;
             position:fixed;
             min-width:20%;
+            color:white;
+            z-index:10;
+            padding-top:7%;
             }
+
+        h1{
+            font-size:4vw;
+        }
+
+        img{
+            width:30%;
+            position:fixed;
+            left:35%;
+            top:15%;
+            z-index:1;
+            padding-top:5%;
+        }
 
 
     	</style>
@@ -56,16 +80,20 @@
         <h1>Core Interaction</h1>
         
             <div id="container1">
-                <a href="studio/index.html">STUDIO</a>
+                <a href="studio/index.html">
+                    <h1>STUDIO</h1>
+                </a>
             </div>
 
             <div id="container2">
-                <a href="lab/index.html">LAB</a>
+                <a href="lab/index.html">
+                    <h1>LAB</h1>
+                </a>
             </div>
 
+            <img src="letter.jpg">
 
-
-             </div>
+             
 
 
     </body>
