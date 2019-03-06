@@ -1,75 +1,166 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Lab Index</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet">
+        <title>NYPL</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
 
         <style>
 
-		body{
-			background-color:black;
-            font-family:futura;
-		}
+            html, body{
+                width:100%;
+                height:100%;
+                margin:0;
+                text-align:center;
+                font-family:times;
+                color:black;
+            }
 
-        a {
-            color: black;
+            a {
+            color: white;
             text-decoration: none;
-        }
+                }
+
+            *{
+                box-sizing:border-box;
+            }
+
+            header{
+                background-color:black;
+                width:100%;
+                height:20%;
+                color:white;
+                text-align:left;
+                padding:20px 0px 0px 30px;
+                line-height:15px;
+            }
+
+            h1{
+                font-size:40px;
+            }
+
+            h3{
+                letter-spacing: 4px;
+            }
+
+            main{
+                width:100%;
+                height:70%;
+                text-align:center;
+                float:right;
+                background-image:url("images/main.jpg");
+                background-position:center;
+                background-size:100%;
+            }
+
+            aside{
+                background-color:#800020;
+                width:100%;
+                height:10%;
+                float:left;
+                color:white;
+                font-size:12pt;
+                text-align:left;
+                padding-left:3%;
+
+            }
+
+            main section{
+                width:50%;
+                height:70%;
+                float:right;
+                background-color:green;
+
+            }
+
+            aside section{
+                height:10%;
+                width:30%;
+                padding:2.5% 0px 0px 20px;
+                float:left;
+                text-align:center;
+            }
+
+            @media (max-width:500px){
+                
+                h1{
+                    font-size:30px;
+                }
+
+                h3{
+                    font-size:20px;
+                }
+
+                header{
+                    padding:40px 0px 0px 30px;
+                }
+            }
 
 
-		#container{
-			text-align:center;
-			width:33vw;
-			height:80vh;
-			top:10vh;
-			left:33vw;
-			position:fixed;
-			background-color:lightyellow;
-            line-height:20px;
-		}
+                h1:hover{
+                    color:#800020;
+                }
 
-    	</style>
+                header:hover{
+                    background-color:#F5F5DC;
+                    color:#800020;
+                }
+
+                a:hover{
+                    font-size:25px;
+                }
+
+                a:active{
+                    color:black;
+                }
+
+                ::selection{
+                    background-color:#800020;
+                    color:#F5F5DC;
+                }
+
+        </style>
     </head>
     
 
 
     <body>
+        
+        <header> 
+           
+            <h1>New York Public Library<h1>
+            <h3>DIGITAL COLLECTIONS<h3>
 
-         <div id="container">
+        </header>
+       
 
-            <h1>LAB</h1>
+        <aside>
 
-            <br>
+            <section>
+                <a href="index.html">HOME<a> 
+            </section>
 
-            <a href="exercise_1/index.html">Exercise 1:<br> Teach a property</a> <br><br>
-
-            <a href="exercise_2/index.html">Exercise 2:<br> New York Public Library</a> <br><br>
-
-            <a href="exercise_2/index.html">Exercise 3 <br>New York Public Library</a> <br><br>
-
-            <a href="exercise_4/index.html">Exercise 4 <br>New York Public Library</a><br><br>
-
-            <a href="">Exercise 5</a> <br><br><br>
-
-            <h3>READING RESPONSES</h3>
-
-            <a href="">Reading 1</a> <br><br>
-
-            <a href="">Reading 2</a> <br><br>
-
-            <a href="">Reading 3</a> <br><br>
-
-            <a href="">Reading 4</a> <br><br>
-
-
-
-        </div>
-
-
-    </body>
     
+            <section>
+                <a href="barvin/index.html">BILL BARVIN<a>
+            </section>
+
+
+            <section>
+                <a href="women/index.html">WOMEN OF DISTINCTION</a> 
+            </section>
+
+
+         </aside>
+
+
+        <main> 
+
+
+
+
+
+        </main>
+    </body>
 </html>
