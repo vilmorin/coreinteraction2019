@@ -9,10 +9,9 @@
         <style>
 
             html, body{
-                width:100%;
-                height:100%;
+/*                width:100%;
+                height:100%;*/
                 margin:0;
-                text-align:center;
                 font-family:times;
                 color:black;
             }
@@ -55,8 +54,6 @@
 
             body{
                 background-color:#F5F5DC;
-                text-align:center;
-
             }
 
             aside{
@@ -71,14 +68,6 @@
 
             }
 
-            main section{
-                width:100%;
-                height:70%;
-                float:right;
-                text-align:center;
-
-            }
-
             aside section{
                 height:10%;
                 width:30%;
@@ -87,9 +76,7 @@
                 text-align:center;
             }
 
-            img{
-                width:30%;
-            }
+
 
             #third{
                 text-align:left;
@@ -123,6 +110,25 @@
                 color:black;
             }
 
+                .container{
+                    display:flex;
+                    padding:10% 0% 10% 20%;
+                    width:80%;
+                    height:100vh;
+                    flex-flow:row wrap;
+                    flex-direction:row;
+                    align-content:space-around;
+                    justify-content:space-between;
+                }
+                .container img {
+                    height: 20vw;
+                }
+/*
+                .container img{
+                    width:5vw;
+                    height: auto;
+                }*/
+
             @media (max-width:500px){
                 
                 h1{
@@ -151,12 +157,6 @@
                 #paragraph{
                     font-size:12px;
                     text-align:left;
-                }
-
-                img{
-                    width:90%;
-                }
-
                 }
             }
 
@@ -203,15 +203,15 @@
 
             <p id="paragraph"> </p>
 
-
-            <img src="images/1.jpeg"></main>
-            <img src="images/2.jpeg"></main>
-            <img src="images/3.jpeg" id="third"></main>
-            <img src="images/4.jpeg"></main>
-            <img src="images/5.jpeg"></main>
-            <img src="images/6.jpeg"></main>
-            <img src="images/7.jpeg"></main>
-            <img src="images/8.jpeg"></main>
+        <div class="container">
+            <img src="images/1.jpeg">
+            <img src="images/3.jpeg" id="third">
+            <img src="images/4.jpeg">
+            <img src="images/5.jpeg">
+            <img src="images/6.jpeg">
+            <img src="images/7.jpeg">
+            <img src="images/8.jpeg">
+        </div>
 
         </main>
     </body>

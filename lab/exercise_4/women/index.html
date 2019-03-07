@@ -9,10 +9,9 @@
         <style>
 
             html, body{
-                width:100%;
-                height:100%;
+/*                width:100%;
+                height:100%;*/
                 margin:0;
-                text-align:center;
                 font-family:times;
                 color:black;
             }
@@ -22,8 +21,8 @@
             }
 
             a {
-            color: white;
-            text-decoration: none;
+                color: white;
+                text-decoration: none;
             }
 
             header{
@@ -55,8 +54,6 @@
 
             body{
                 background-color:#F5F5DC;
-                text-align:center;
-
             }
 
             aside{
@@ -71,14 +68,6 @@
 
             }
 
-            main section{
-                width:100%;
-                height:70%;
-                float:right;
-                text-align:center;
-
-            }
-
             aside section{
                 height:10%;
                 width:30%;
@@ -87,10 +76,7 @@
                 text-align:center;
             }
 
-            img{
-                text-align:center;
-                padding:10%;
-            }
+
 
             #third{
                 text-align:left;
@@ -124,10 +110,25 @@
                 color:black;
             }
 
-            img{
-                width:90%;
-            }
-            
+                .container{
+                    display:flex;
+                    padding:10% 0% 10% 20%;
+                    width:80%;
+                    height:100vh;
+                    flex-flow:row wrap;
+                    flex-direction:row;
+                    align-content:space-around;
+                    justify-content:space-between;
+                }
+                .container img {
+                    height: 20vw;
+                }
+/*
+                .container img{
+                    width:5vw;
+                    height: auto;
+                }*/
+
             @media (max-width:500px){
                 
                 h1{
@@ -157,13 +158,29 @@
                     font-size:12px;
                     text-align:left;
                 }
+            }   
 
-                img{
-                    width:90%;
+                h1:hover{
+                    color:#800020;
                 }
 
+                header:hover{
+                    background-color:#F5F5DC;
+                    color:#800020;
                 }
-            }
+
+                a:hover{
+                    font-size:25px;
+                }
+
+                a:active{
+                    color:black;
+                }
+
+                ::selection{
+                    background-color:#800020;
+                    color:#F5F5DC;
+                }
 
         </style>
     </head>
@@ -193,7 +210,7 @@
 
 
             <section>
-                <a href="../women/index.html">WOMEN OF DISTINCTION<a> 
+                <a href="index.html">WOMEN OF DISTINCTION<a> 
             </section>
 
          </aside>
@@ -201,21 +218,22 @@
 
         <main> 
             <div id="box">
-            <p id="subtitle">LOCATION PHOTOGRAPH ARCHIVE</p>
-            <p id="title">Bill Barvin</p>
+            <p id="subtitle">REMARKABLE IN WORKS AND INVINCIBLE IN CHARACTER</p>
+            <p id="title">Women of Distincion</p>
             </div>
 
-            <p id="paragraph">Over 3,000 35mm negative strips and 1,000 print photographs related to Barvin's career as a location manager and scout for television, film, and video projects filmed in New York and New Jersey as well as Connecticut and Pennsylvania and arranged into series primarily by location. Images are of interiors of occupied and unoccupied apartments, lofts, homes, businesses, schools, churches, theaters, laundromats, factories, warehouses, and offices along with exteriors of properties as well as street views of larger exterior locations. Series contains photographs that were taped or glued together into manila folders to create a detailed view of the location. The collection also includes one box of production documentation materials.</p>
 
-        
-            <img src="images/pano.jpeg">
-            <img src="images/pano3.jpeg">
-            <img src="images/pano4.jpeg" id="third">
-            <img src="images/pano5.jpeg">
-            <img src="images/longbridge.jpeg">
-            <img src="images/10.jpeg">
-            <img src="images/11.jpeg">
-            <img src="images/12.jpeg">
+            <p id="paragraph"> </p>
+
+        <div class="container">
+            <img src="images/1.jpeg">
+            <img src="images/3.jpeg" id="third">
+            <img src="images/4.jpeg">
+            <img src="images/5.jpeg">
+            <img src="images/6.jpeg">
+            <img src="images/7.jpeg">
+            <img src="images/8.jpeg">
+        </div>
 
         </main>
     </body>
