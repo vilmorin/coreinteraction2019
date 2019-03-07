@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>NYPL</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+
+        <style>
+
+            html, body{
+/*                width:100%;
+                height:100%;*/
+                margin:0;
+                font-family:times;
+                color:black;
+            }
+
+            *{
+                box-sizing:border-box;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            header{
+                background-color:black;
+                width:100%;
+                height:20%;
+                color:white;
+                text-align:left;
+                padding:20px 0px 0px 30px;
+                line-height:15px;
+            }
+
+            h1{
+                font-size:40px;
+            }
+
+            h3{
+                letter-spacing: 4px;
+            }
+
+            main{
+            
+                text-align:center;
+                float:right;
+                background-size:100%;
+                background-color:#F5F5DC;
+                width:100%;
+            }
+
+            body{
+                background-color:#F5F5DC;
+            }
+
+            aside{
+                background-color:#800020;
+                width:100%;
+                height:10%;
+                float:left;
+                color:white;
+                font-size:12pt;
+                text-align:left;
+                padding-left:3%;
+
+            }
+
+            aside section{
+                height:10%;
+                width:30%;
+                padding:2.5% 0px 0px 20px;
+                float:left;
+                text-align:center;
+            }
+
+
+
+            #third{
+                text-align:left;
+            }
+
+            #title{
+                font-size:50px;
+            }
+
+            #subtitle{
+                font-size:30px;
+                padding-top:15%;
+            }
+
+    
+            #box{
+                height:50%;
+                background-color:#800020;
+                padding-bottom:10%;
+                color:white;
+                line-height:5px;
+            }
+
+            #paragraph{
+                width:80%;
+                padding-left:20%;
+                text-align:left;
+                padding-top:10%;
+                font-size:19.9px;
+                text-align:justify;
+                color:black;
+            }
+
+                .container{
+                    display:flex;
+                    padding:10% 0% 10% 20%;
+                    width:80%;
+                    height:100vh;
+                    flex-flow:row wrap;
+                    flex-direction:row;
+                    align-content:space-around;
+                    justify-content:space-between;
+                }
+                .container img {
+                    height: 20vw;
+                }
+/*
+                .container img{
+                    width:5vw;
+                    height: auto;
+                }*/
+
+            @media (max-width:500px){
+                
+                h1{
+                    font-size:30px;
+                }
+
+                h3{
+                    font-size:20px;
+                }
+
+                header{
+                    padding:40px 0px 0px 30px;
+                }
+
+                a{
+                    font-size:15px;
+                }
+
+                #subtitle{
+                    font-size:20px;
+                }
+                #title{
+                    font-size:35px;
+                }
+
+                #paragraph{
+                    font-size:12px;
+                    text-align:left;
+                }
+            }
+
+        </style>
+    </head>
+    
+
+
+    <body>
+        
+        <header> 
+           
+            <h1>New York Public Library<h1>
+            <h3>DIGITAL COLLECTIONS<h3>
+
+        </header>
+       
+
+        <aside>
+
+            <section>
+                <a href="../index.html">HOME<a>
+            </section>
+
+    
+            <section>
+                <a href="../barvin/index.html">BILL BARVIN<a>
+            </section>
+
+
+            <section>
+                <a href="index.html">WOMEN OF DISTINCTION<a> 
+            </section>
+
+         </aside>
+
+
+        <main> 
+            <div id="box">
+            <p id="subtitle">REMARKABLE IN WORKS AND INVINCIBLE IN CHARACTER</p>
+            <p id="title">Women of Distincion</p>
+            </div>
+
+
+            <p id="paragraph"> </p>
+
+        <div class="container">
+            <img src="images/1.jpeg">
+            <img src="images/3.jpeg" id="third">
+            <img src="images/4.jpeg">
+            <img src="images/5.jpeg">
+            <img src="images/6.jpeg">
+            <img src="images/7.jpeg">
+            <img src="images/8.jpeg">
+        </div>
+
+        </main>
+    </body>
+</html>
