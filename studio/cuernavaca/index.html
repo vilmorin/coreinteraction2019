@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Project</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <link rel= "shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+
+    <style>
+
+          html, body{
+                width:100%;
+                height:100%;
+                margin:0;
+                font-family:futura;
+                overflow:hidden;
+            }
+
+            *{
+                box-sizing:border-box;
+            }
+
+            #background{
+                height:auto;
+                width:100%;
+                z-index:0;
+            }
+
+            #drone{
+                width:25vw;
+                height:25vw;
+                position:absolute;
+                left:35vw;
+                top:25vh;
+                z-index:10;
+            }
+
+            #place{
+                font-size:60px;
+                position:fixed;
+                color:white;
+                top:10vh;
+                left:6vw;
+
+            }
+
+            #collection{
+                position:absolute;
+                left:22vw;
+                top:35vh;
+                z-index:20;
+            }
+
+            #slideshow{
+                position:absolute;
+                left:19vw;
+                top:50vh;
+                z-index:20;
+            }
+
+            #scroll{
+                position:absolute;
+                left:27vw;
+                top:65vh;
+                z-index:20;
+            }
+
+            a:visited{
+                color:black;
+            }
+
+            a{
+                text-decoration: none;
+                color:white;
+                font-size:15px;
+            }
+
+            a:hover{
+                font-size:20px;
+            }
+
+    </style>
+
+
+    <body>
+
+              <img src="images/whitedrone.png" id="drone">
+
+              <p id="place">CUERNAVACA</p>
+
+            <div id="circle">
+
+               <a id="slideshow" href="maine/index.html">SLIDESHOW</a> 
+
+               <a id="collection" href="cuernavaca/index.html">VIEW COLLECTION</a>
+
+               <a id="scroll" href="BLEH">SCROLL</a>
+ 
+            </div>
+
+                <video id="background" autoplay loop >
+                  <source src="videos/trimmed.mp4" type="video/mp4">
+                </video>
+              
+            </video>
+
+    </body>
+    
+</html>
