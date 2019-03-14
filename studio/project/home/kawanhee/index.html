@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Kawanhee</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <link rel= "shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+
+    <style>
+
+           html, body{
+                width:100%;
+                height:100%;
+                margin:0;
+                font-family:futura;
+                font-style:normal;
+                overflow:hidden;
+            }
+
+            *{
+                box-sizing:border-box;
+            }
+
+            #background{
+                height:auto;
+                width:105%;
+                z-index:0;
+            }
+
+            #arrow{
+              width:50px;
+              opacity:.6;
+              position:fixed;
+              margin-top:30px;
+              margin-left:30px;
+              z-index:100;
+            }
+
+            #drone{
+                width:25%;
+                height:25vw;
+                position:absolute;
+                left:37.5vw;
+                top:25vh;
+                z-index:10;
+            }
+
+            #place{
+                font-size:60px;
+                position:fixed;
+                color:white;
+/*                left:3vw;
+*/                bottom:80%;
+                width:100%;
+                letter-spacing:10px;
+                text-align:center;
+
+            }
+
+            #slideshow{
+                position:absolute;
+                left:28vw;
+                top:30vh;
+                z-index:20;
+            }
+
+            #collection{
+                position:absolute;
+                left:21vw;
+                top:50vh;
+                z-index:20;
+            }
+
+            #scroll{
+                position:absolute;
+                left:33vw;
+                top:68vh;
+                z-index:20;
+            }
+
+            a:visited{
+                color:white;
+            }
+
+            a{
+                text-decoration: none;
+                color:white;
+                font-size:15px;
+            }
+
+            a:hover{
+                font-size:20px;
+                letter-spacing:3px;
+            }
+
+            #arrow:hover{
+              opacity:10;
+              width:65px;
+              text-align:center;
+            }
+
+    </style>
+
+
+    <body>
+
+                <a href="../index.html">
+                    <img src="images/arrow.png" id="arrow">
+                </a>
+
+                <img src="images/whitedrone.png" id="drone">
+
+                <p id="place">KAWANHEE</p>
+
+
+            <div id="circle">
+                 <a id="slideshow" href="slideshow/index.html">SLIDESHOW</a> 
+
+                 <a id="collection" href="collection/index.html">COLLECTION</a>
+
+                 <a id="scroll" href="scroll/index.html">SCROLL</a>
+            </div>
+
+                <video id="background" autoplay loop >
+                  <source src="videos/cover.mp4" type="video/mp4">
+                </video>
+              
+            </video>
+
+    </body>
+    
+</html>
