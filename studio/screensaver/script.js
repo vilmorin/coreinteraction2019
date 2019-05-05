@@ -5,6 +5,10 @@ function beep() {
 
 
 
+$(".shape").click(function(){
+	$(this).css('background-color', "green")
+})
+
 
 
 // var buildingNumber = 30;
