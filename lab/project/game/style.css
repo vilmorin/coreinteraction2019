@@ -1,0 +1,246 @@
+  html, body{
+                width:100%;
+                height:100%;
+                margin:0;
+                font-family:futura;
+                font-style:normal;
+                overflow:hidden;
+            }
+
+            *{
+                box-sizing:border-box;
+            }
+
+
+            #background{
+                width:100%;
+                height:100%;
+                background-image: url("images/background.jpg");
+                opacity:.9;
+            }
+
+            #audio{
+                left:50vw;
+                position:fixed;
+            }
+
+            #popup{
+                width:40%;
+                height:30%;
+                background-color:white;
+                position:fixed;
+                z-index:300;
+                top:35vh;
+                left:30vw;
+                border-radius:15px;
+                display: none;
+                z-index:500;
+                color:brown;
+                font-size:30px;
+                text-align:center;
+                box-shadow:10px 10px 20px;
+                z-index:300;
+            }
+
+            #result{
+                width:100%;
+                font-size:50px;
+                padding:30px;
+            }
+
+            .shape{
+                width: 130px;
+                height: 185px;
+                background-color:red;
+                background-image: linear-gradient(to bottom right, red, yellow);
+                position:absolute;
+                left:-200px;
+                box-shadow:1vh 2vw 6vh black;
+                background-size: cover;
+            }
+
+            .shape.animate:active{
+                border:5px solid brown;
+            }
+
+            .shape.animate {
+                animation-name: horizontal;
+                animation-duration: 5s;
+                animation-iteration-count:infinite;
+                animation-direction:normal;
+                transition-timing-function: linear;
+                animation-timing-function: linear;
+            }
+
+/*            .shape.animate:active {
+                animation-iteration-count:1;
+                border:5px solid white;
+                animation-direction:normal;
+                transition-timing-function: linear;
+                animation-timing-function: linear;
+            }*/
+
+            .envelopeshape{
+                width:150px;
+                height:60px;
+                background-color:white;
+                position:absolute;
+                left:-200px;
+                box-shadow:1vh 2vw 6vh black;
+                background-size: contain, cover;
+                background-position: center;
+            }
+
+            .envelopeshape.animate {
+                animation-name: horizontal;
+                animation-duration: 5s;
+                animation-iteration-count:infinite;
+                animation-direction:normal;
+                transition-timing-function: linear;
+                animation-timing-function: linear;
+            }
+
+            .envelopeshape.animate:active{
+                border:5px solid brown;
+            }
+
+            #scorebar{
+                height:8%;
+                width:100%;
+                background-color:brown;
+                position:fixed;
+                color:white;
+                font-size:30px;
+                z-index:200;
+            }
+
+            #title{
+                font-size:6vh;
+                text-align:center;
+            }
+
+            #points{
+                font-size:20px;
+                top:3%;
+                left:5%;
+                position:fixed;
+            }
+
+
+
+
+
+            #one{
+                background-image: url(images/1.png);
+                background-size: cover;
+            }
+            #two{
+                background-image: url(images/2.png);
+                background-size: cover;
+            }
+            #three{
+                background-image: url(images/3.png);
+                background-size: cover;
+            }
+            #four{
+                background-image: url(images/4.png);
+                background-size: cover;
+            }
+            #five{
+                background-image: url(images/5.png);
+                background-size: cover;
+            }
+            #six{
+                background-image: url(images/6.png);
+                background-size: cover;
+            }
+            #seven{
+                background-image: url(images/7.png);
+                background-size: cover;
+            }
+            #eight{
+                background-image: url(images/8.png);
+                background-size: cover;
+            }
+            #nine{
+                background-image: url(images/9.png);
+                background-size: cover;
+            }
+
+
+
+
+            #a{
+                background-image: url(images/a.png);
+            }
+
+            #b{
+                background-image: url(images/b.png);
+            }
+
+            #c{
+                background-image: url(images/c.png);
+            }
+
+            #d{
+                background-image: url(images/d.png);
+            }
+
+            #e{
+                background-image: url(images/e.png);
+            }
+
+            #f{
+                background-image: url(images/f.png);
+            }
+
+            #g{
+                background-image: url(images/g.png);
+            }
+
+            #h{
+                background-image: url(images/h.png);
+            }
+
+            #i{
+                background-image: url(images/i.png);
+            }
+
+            #j{
+                background-image: url(images/j.png);
+            }
+
+            #k{
+                background-image: url(images/k.png);
+            }
+
+            #l{
+                background-image: url(images/l.png);
+            }
+
+            #m{
+                background-image: url(images/m.png);
+            }
+
+            #n{
+                background-image: url(images/n.png);
+            }
+
+            #o{
+                background-image: url(images/o.png);
+            }
+
+
+            @keyframes horizontal {
+                from{left:-20vw;} 
+                to{left:115vw;
+                }
+            }
+
+/*            @keyframes click {
+                from{transform:scale(1);} 
+                to{transform:scale(.5);}
+            }
+*/
+
+
