@@ -3,36 +3,96 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Studio Index</title>
+        <title>STUDIO</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet">
+        <link rel="icon" href="../favicon.png" type="image/x-icon" />
+
 
         <style>
 
-		body{
-			background-color:black;
-			font-family:futura;
+		body, html{
+/*			background-image: url(background.jpg);
+*/			font-family:futura;
+            background-color:black;
             font-size:13px;
             color:white;
+            overflow:hide;
 		}
 
-           a {
+        *{
+            box-sizing:border-box;
+        }
+
+        a {
             color: white;
             text-decoration: none;
         }
 
+        #title {
+            font-size:70px;
+            position:fixed;
+            width:100%;
+            height:10%;
+            text-align:center;
+            animation-name:expand;
+            animation-duration:20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-direction: alternate;
+            animation-delay:2s;
+        }
 
-		#container{
-			text-align:center;
-			width:33vw;
-			height:94vh;
-			top:3vh;
-			left:33vw;
-			position:fixed;
-            line-height:15px;
+        #block{
+            width:70%;
+            left:13%;
+            top:27%;
+            height:70%;
+            text-align:center;
+            position:fixed;
+        }
 
-		}
+        .divider{
+           font-size:15px;
+           float:left;
+           list-style-position: inside;
+           text-align:left;
+           padding-left:8%;
+           height:100%;
+           line-height:30px;
+           width:25%;
+        }
+
+        h3{
+            font-size:20px;
+            letter-spacing:2px;
+        }
+
+        li{
+            line-height:32px;
+
+        }
+
+        a:hover{
+            transform:scale(1.3);
+            text-shadow:3px 3px 2px black;
+        }
+
+        li:hover{
+            transform:scale(1.3);
+            text-shadow:3px 3px 2px black;
+        }
+
+        @keyframes expand{
+            from{letter-spacing:0;
+                 text-shadow:1px 1px 2px black;}
+
+            to{ letter-spacing:1vw;
+                transform:scale(1.3);
+                font-style:black;
+                text-shadow:5px 5px 10px black;}
+        }
 
     	</style>
 
@@ -41,65 +101,144 @@
     
     <body>
 
-         <div id="container">
-
-                <h1>STUDIO</h1> <br>
+        <h1 id="title">STUDIO</h1>
 
 
-        <a href="project/home/index.html">
-            <strong> Project 1 </strong> <br><br>
-        </a>
+    <div id="block">
+
+            <ol id="projects" class="divider">
+
+                    <h3>PROJECTS</h3>
+
+                    <li>
+                        <a href="project/home/index.html">My Places</a>
+                    </li>
+
+                    <li>
+                        <a href="screensaver/index.html">Mesmerized</a>
+                    </li>
+
+            </ol>
 
 
-        <a href="https://vilmorin.github.io/creativecomputing/bike_journey/journey1.html">
-                <strong>Exercise 1:</strong>
-                <br>Past Project<br><br>
-        </a>
+
+            <ol id="exercises" class="divider">
+
+                    <h3>EXERCISES</h3>
+
+                    <li>
+                        <a href="https://vilmorin.github.io/creativecomputing/bike_journey/journey1.html">
+                            Past Project
+                        </a>
+                    </li>
 
 
-        <a href="exercise_1.0/exercise_1.2/index.html">
-                <strong>Exercise 2:</strong>
-                <br>Website Variations<br><br>
-        </a>
+                    <li>
+                        <a href="exercise_1.0/exercise_1.2/index.html">
+                            Variations
+                        </a>
+                    </li>
 
 
-        <a href="exercise_3/index.html">
-                <strong>Exercise 3:</strong>
-                <br>Monogram<br><br>
-        </a>
+                    <li>
+                        <a href="exercise_3/index.html">
+                            Monogram
+                        </a>
+                    </li>
 
 
-        <a href="exercise_4/index.html">
-            <strong>Exercise 4:</strong> 
-            <br>Clock<br><br>
-        </a>
+                    <li>
+                        <a href="exercise_4/index.html">
+                            Clock
+                        </a>
+                    </li>
 
 
-        <a href="exercise_5/index.html">
-            <strong>Exercise 5:</strong> 
-            <br> Animation<br><br>
-        </a>
+                    <li>
+                        <a href="class_exercises/bubbles/index.html">
+                            Animation
+                        </a>
+                    </li>
 
-                <h3>READING RESPONSES</h3>
+            </ol>
 
-                    <a href="">Reading 1</a> <br><br>
 
-                    <a href="">Reading 2</a> <br><br>
 
-                    <a href="">Reading 3</a> <br><br>
+            <ol id="readings" class="divider">
 
-                    <a href="">Reading 4</a> <br><br>
+                    <h3>IN CLASS</h3>
 
-                    <a href="">Reading 5</a> <br><br>
 
-                    <a href="readings/6/index.html">Reading 6</a> <br><br>
+                    <li>
+                        <a href="exercise_5/index.html">Line Animation</a>
+                    </li>
 
-                    <a href="readings/7/index.html">Reading 7</a> <br><br>
+                    <li>
+                        <a href="class_exercises/bouncing_ball/index.html">Bouncing Trump</a>
+                    </li>
 
-                    <a href="readings/8/index.html">Reading 8</a> <br><br>
+                    <li>
+                        <a href="class_exercises/loader/index.html">Loader</a>
+                    </li>
+            </ol>
 
-        </div>
 
+
+
+            <ol id="readings" class="divider">
+
+                    <h3>READINGS</h3>
+
+                    <li>      
+                        <a href="">Reading 1</a> 
+                    </li> 
+
+                    <li> 
+                        <a href="">Reading 2</a> 
+                    </li> 
+
+                    <li> 
+                        <a href="">Reading 3</a> 
+                    </li>
+
+                    <li>  
+                        <a href="">Reading 4</a>
+                    </li> 
+
+                    <li> 
+                        <a href="">Reading 5</a> 
+                    </li>
+
+                    <li>  
+                        <a href="readings/6/index.html">Reading 6</a> 
+                    </li> 
+
+                    <li> 
+                        <a href="readings/7/index.html">Reading 7</a> 
+                    </li>
+
+                    <li>  
+                        <a href="readings/8/index.html">Reading 8</a> 
+                    </li> 
+
+                    <li> 
+                        <a href="">Reading 9</a> 
+                    </li>
+
+                    <li> 
+                        <a href="">Reading 10</a> 
+                    </li>
+
+                    <li> 
+                        <a href="">Reading 11</a> 
+                    </li>
+
+                    <li> 
+                        <a href="">Reading 12</a> 
+                    </li>
+
+            </ol>
+    </div>
 
     </body>
     
