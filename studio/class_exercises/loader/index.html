@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Loader</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet">
+
+        <style>
+
+            *{
+                box-sizing:border-box;
+            }
+
+            html, body{
+                    width:100%;
+                    height:100%;
+                    margin:0;
+                    font-family:futura;
+                    background-color:rgb(255,255,230);
+
+            }
+
+            #container{
+    /*                box-shadow:-10px 15px 100px 5px black;
+    */              border-style:solid;
+                    border-width:30px;
+                    border-color: darkblue lightblue darkblue lightblue;
+                    width:100px;
+                    height:100px;
+                    position:fixed;
+                    left:43%;
+                    top:40%;
+
+                    animation-name:loader;
+                    animation-duration:2s;
+                    animation-iteration-count:infinite;
+                    animation-direction:alternate;
+            }
+
+            @keyframes loader{
+                from{border-width:10px;}
+                to{border-width:40px;}
+
+   /*             from{background-color:white;}
+                to{background-color:black;}*/
+
+                from{border-color:darkblue lightblue darkblue lightblue;}
+                to{border-color:lightblue darkblue lightblue darkblue;}
+
+            }
+
+
+    	</style>
+
+    </head>
+
+    
+    <body>
+
+        <div id="container"></div>
+
+    </body>
+    
+</html>
+

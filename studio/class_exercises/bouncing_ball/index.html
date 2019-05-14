@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ball</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<style>
+		.shape{
+			width:200px;
+			height:200px;
+			left:0;
+			top: 0;
+			border-radius:50%;
+			position:fixed;
+
+			-webkit-animation-name: spin;
+			-webkit-animation-duration: 3s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+		}
+
+		img{
+			width:110%;
+			height:110%;
+		}
+
+		body{
+			background-color:lightblue;
+		}
+
+		@keyframes spin {
+  		  from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(360deg); 
+        }
+			}
+
+	</style>
+
+	<body>
+
+		<div class="shape">
+			<img src="trump.png">
+		</div>
+
+	</body>
+	
+</html>
+
