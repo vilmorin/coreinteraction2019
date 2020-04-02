@@ -4,11 +4,11 @@ function initialize(){
   if (annyang) {
     var commands = {
       // explicit
-      'triangle': iSaidHello,
+      'channel one': iSaidHello,
       // single variable
-      'square': greet,
+      'channel two': greet,
       // splat
-      'circle': iSaidHiToMultiplePeople,
+      'chanel three': iSaidHiToMultiplePeople,
       // optional command
       '(please) say hello to me': iSaidHello
     }
@@ -24,20 +24,20 @@ function initialize(){
 }
 
 function iSaidHello(){
-  document.getElementById('triangle').style.opacity = '100%';
-  document.getElementById('square').style.opacity = '0%';
-  document.getElementById('circle').style.opacity = '0%';
+  document.getElementById('channel1').style.opacity = '100%';
+  document.getElementById('channel2').style.opacity = '0%';
+  document.getElementById('channel3').style.opacity = '0%';
 
 }
 
 function greet(name){
-  document.getElementById('triangle').style.opacity = '0%';
-  document.getElementById('square').style.opacity = '100%';
-  document.getElementById('circle').style.opacity = '0%';
+  document.getElementById('channel1').style.opacity = '0%';
+  document.getElementById('channel2').style.opacity = '100%';
+  document.getElementById('channel3').style.opacity = '0%';
 }
 
 function iSaidHiToMultiplePeople(names){
-  document.getElementById('triangle').style.opacity = '0%';
-  document.getElementById('square').style.opacity = '0%';
-  document.getElementById('circle').style.opacity = '100%';
+  document.getElementById('channel1').style.opacity = '0%';
+  document.getElementById('channel2').style.opacity = '0%';
+  document.getElementById('channel3').style.opacity = '100%';
 }

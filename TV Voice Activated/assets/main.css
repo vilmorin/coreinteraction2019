@@ -22,7 +22,7 @@ body{
 
 #screen{
 	position:absolute;
-	background-color:darkgray;
+	background-color:#1a1a1a;
 	width:50vw;
 	height:55vh;
 	left:23vw;
@@ -31,7 +31,7 @@ body{
 	border-width:20px;
 	border-color:black;
 	border-radius:1vw;
-	z-index:;
+	z-index:1;
 }
 
 /*#stand{
@@ -49,3 +49,27 @@ video{
   z-index: -100;
   overflow:hidden;
 }
+
+#channel1{
+	position:absolute;
+	z-index:1;
+	opacity:0;
+}
+
+#channel2{
+	position:absolute;
+	z-index:5;
+	opacity:0;
+}
+
+#channel3{
+	position:absolute;
+	z-index:10;
+	opacity:0;
+
+}
+
+
+
+
+
