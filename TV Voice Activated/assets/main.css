@@ -43,32 +43,81 @@ body{
 	border:solid;
 	border-radius:10vw;
 	top:65vh;*/
-}
+/*}*/
 
 video{
   z-index: -100;
   overflow:hidden;
 }
 
+#input_text{
+	width:15%;
+	height:50%;
+	right:5%;
+	position:absolute;
+	z-index:50;
+	top:15%;
+	font-family:'helvetica';
+	font-size:12pt;
+	color:black;
+}
+
+#index{
+	width:100%;
+	height:5%%;
+	top:1%;
+	position:absolute;
+	z-index:50;
+	top:0px;
+	font-family:'helvetica';
+	font-size:15pt;
+	line-height: 70px;
+	letter-spacing: 5px;
+	animation-name: index;
+ 	animation-duration: 40s;
+ 	animation-iteration-count: infinite;
+ 	transition:linear;
+}
+
+@keyframes index {
+  from {left: 90%;}
+  to {left:-70%;}
+}
+
+#speech_image{
+	width:100%;
+	position:absolute;
+}
+
 #channel1{
 	position:absolute;
 	z-index:1;
-	opacity:0;
+	display:none;
 }
 
 #channel2{
 	position:absolute;
 	z-index:5;
-	opacity:0;
+	display:none;
 }
 
 #channel3{
 	position:absolute;
 	z-index:10;
-	opacity:0;
-
+	display:none;
 }
 
+#channel4{
+	position:absolute;
+	z-index:11;
+	display:none;
+}
+
+#channel5{
+	position:absolute;
+	z-index:12;
+	display:none;
+}
 
 
 

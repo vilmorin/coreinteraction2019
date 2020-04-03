@@ -8,9 +8,11 @@ function initialize(){
       // single variable
       'channel two': greet,
       // splat
-      'chanel three': iSaidHiToMultiplePeople,
+      'channel three': iSaidHiToMultiplePeople,
       // optional command
-      '(please) say hello to me': iSaidHello
+      'channel four': channelFour,
+
+	  'channel 5': channelFive,
     }
 
     annyang.addCommands(commands);
@@ -24,20 +26,54 @@ function initialize(){
 }
 
 function iSaidHello(){
-  document.getElementById('channel1').style.opacity = '100%';
-  document.getElementById('channel2').style.opacity = '0%';
-  document.getElementById('channel3').style.opacity = '0%';
 
+  document.getElementById('channel1').style.display = 'block';
+  document.getElementById('channel1').play();
+  document.getElementById('channel2').style.display = 'none';
+  document.getElementById('channel3').style.display = 'none';
+  document.getElementById('channel4').style.display = 'none';
+  document.getElementById('channel5').style.display = 'none';
 }
 
 function greet(name){
-  document.getElementById('channel1').style.opacity = '0%';
-  document.getElementById('channel2').style.opacity = '100%';
-  document.getElementById('channel3').style.opacity = '0%';
+
+  document.getElementById('channel1').style.display = 'none';
+  document.getElementById('channel2').style.display = 'block';
+  document.getElementById('channel2').play();
+  document.getElementById('channel3').style.display = 'none';
+  document.getElementById('channel4').style.display = 'none';
+  document.getElementById('channel5').style.display = 'none';
 }
 
 function iSaidHiToMultiplePeople(names){
-  document.getElementById('channel1').style.opacity = '0%';
-  document.getElementById('channel2').style.opacity = '0%';
-  document.getElementById('channel3').style.opacity = '100%';
+
+  document.getElementById('channel1').style.display = 'none';
+  document.getElementById('channel2').style.display = 'none';
+  document.getElementById('channel3').style.display = 'block';
+  document.getElementById('channel3').play();
+  document.getElementById('channel4').style.display = 'none';
+  document.getElementById('channel5').style.display = 'none';
 }
+
+function channelFour(){
+
+  document.getElementById('channel1').style.display = 'none';
+  document.getElementById('channel1').play();
+  document.getElementById('channel2').style.display = 'none';
+  document.getElementById('channel3').style.display = 'none';
+  document.getElementById('channel4').style.display = 'block';
+  document.getElementById('channel5').style.display = 'none';
+}
+
+function channelFive(){
+
+  document.getElementById('channel1').style.display = 'none';
+  document.getElementById('channel1').play();
+  document.getElementById('channel2').style.display = 'none';
+  document.getElementById('channel3').style.display = 'none';
+  document.getElementById('channel4').style.display = 'none';
+  document.getElementById('channel5').style.display = 'block';
+}
+
+
+
